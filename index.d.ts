@@ -231,7 +231,7 @@ export interface IFnDeveloperOptions extends IOptions {
   lang?: string
   country?: string
   num?: number
-  fullDetail?: false
+  fullDetail?: boolean
 }
 
 export interface IFnDeveloper {
@@ -255,7 +255,9 @@ export interface IFnReviewsOptions extends IOptions {
   lang?: string
   country?: string
   sort?: sort
-  num?: number
+  num?: number,
+  paginate?: boolean
+  nextPaginationToken?: string
 }
 
 export interface IFnReviews {
